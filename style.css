@@ -1,0 +1,126 @@
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, li, a, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+    color: #333;
+    min-height: 100vh;
+    padding: 40px 0;
+}
+
+/* Container */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 8px 32px rgba(60, 60, 60, 0.15);
+    padding: 40px 32px;
+}
+
+/* Headings */
+h1, h2, h3 {
+    color: #ff7e5f;
+    margin-bottom: 18px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.7rem;
+}
+
+h3 {
+    font-size: 1.2rem;
+}
+
+/* Paragraphs */
+p {
+    line-height: 1.7;
+    margin-bottom: 18px;
+}
+
+/* Buttons */
+button, .btn {
+    background: linear-gradient(90deg, #ff7e5f 0%, #feb47b 100%);
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    padding: 12px 32px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+    box-shadow: 0 4px 16px rgba(255, 126, 95, 0.15);
+    margin-top: 10px;
+}
+
+button:hover, .btn:hover {
+    background: linear-gradient(90deg, #feb47b 0%, #ff7e5f 100%);
+    transform: translateY(-2px) scale(1.03);
+}
+
+/* Links */
+a {
+    color: #ff7e5f;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+a:hover {
+    color: #feb47b;
+    text-decoration: underline;
+}
+
+/* Lists */
+ul {
+    margin-bottom: 18px;
+    padding-left: 24px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+/* Card style */
+.card {
+    background: #fff8f0;
+    border-radius: 14px;
+    box-shadow: 0 2px 8px rgba(255, 126, 95, 0.07);
+    padding: 24px;
+    margin-bottom: 24px;
+    transition: box-shadow 0.2s;
+}
+
+.card:hover {
+    box-shadow: 0 6px 24px rgba(255, 126, 95, 0.15);
+}
+
+/* Decorative divider */
+.divider {
+    height: 4px;
+    width: 80px;
+    background: linear-gradient(90deg, #ff7e5f 0%, #feb47b 100%);
+    border-radius: 2px;
+    margin: 24px auto;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .container {
+        padding: 20px 8px;
+    }
+    h1 {
+        font-size: 2rem;
+    }
+}
